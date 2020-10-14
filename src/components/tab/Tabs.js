@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Tab from "./Tab";
 import "./Tab.css";
 
-class Tabs extends Component {
+export default class Tabs extends Component {
   static propTypes = {
     children: PropTypes.instanceOf(Array).isRequired,
   };
@@ -53,5 +53,3 @@ class Tabs extends Component {
     );
   }
 }
-
-export default Tabs;

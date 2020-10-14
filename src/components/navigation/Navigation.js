@@ -6,11 +6,6 @@ export default function Navigation() {
   return (
     <div className="nav">
       <input type="checkbox" id="nav-check" />
-      <div className="nav-header">
-        <div className="nav-title">
-          <img src={logo} alt="Logo" />
-        </div>
-      </div>
       <div className="nav-btn">
         <label htmlFor="nav-check">
           <span></span>
@@ -18,6 +13,12 @@ export default function Navigation() {
           <span></span>
         </label>
       </div>
+      <div className="nav-header">
+        <div className="nav-title">
+          <img src={logo} alt="Logo" />
+        </div>
+      </div>
+
       <div className="nav-links">
         <a href="/">
           <i className="fa fa-globe" aria-hidden="true"></i>
@@ -25,9 +26,11 @@ export default function Navigation() {
         </a>
         <a href="/">
           <i className="fa fa-envelope" aria-hidden="true"></i>
+          <span className="notify" />
         </a>
         <a href="/">
           <i className="fa fa-bell" aria-hidden="true"></i>
+          <span className="notify" />
         </a>
       </div>
     </div>
